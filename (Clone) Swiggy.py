@@ -32,6 +32,11 @@ display(df1)
 
 # COMMAND ----------
 
+df_filtered = df1.filter(df1.Location == "Madhapur")
+display(df_filtered)
+
+# COMMAND ----------
+
 # MAGIC %sql
 # MAGIC create schema if not exists practise
 
